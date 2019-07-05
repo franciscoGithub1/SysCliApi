@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SysCli.App.Entidades
 {
-    class Ficha
+    public class Ficha
     {
     }
 }

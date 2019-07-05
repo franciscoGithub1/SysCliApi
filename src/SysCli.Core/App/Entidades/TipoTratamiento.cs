@@ -4,7 +4,7 @@ using System.Text;
 
 namespace SysCli.App.Entidades
 {
-    public class Propietario
+    public class TipoTratamiento
     {
     }
 }
