@@ -59,6 +59,6 @@
            
         }
 	</script>
-     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCzrphY4O6zeUElla3wcUV_Ngz5oBkTR78&callback=initMap"></script>
+     <script src="https://maps.googleapis.com/maps/api/js?key=keyme=initMap"></script>
 </body>
 </html>
