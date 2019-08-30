@@ -37,10 +37,31 @@
     </form>
     <script>
         var mymap = L.map('mapid').setView([-33.4372, -70.6506], 13);
-        L.marker([-33.4372, -70.6506]).addTo(mymap).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
-        L.marker([-33.4272, -70.6506]).addTo(mymap).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
-            .openPopup();
+
+        var colores = new Array(-33.4372, -70.6506);
+        //colores = new Array(-33.4372, -70.6506);
+        debugger;
+        //colores.forEach(function () {
+        //    console.log(element);
+        //});
+        var miArray = ['-33.4372, -70.6506', '-33.4172, -70.6506'];
+        for (var indice in miArray) {
+            console.log("En el índice '" + indice + "' hay este valor: " + miArray[indice]);
+            var general = miArray[indice].split(',');
+            var lat = general[0];
+            var lon = general[1];
+            L.marker([lat, lon]).addTo(mymap).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+                .openPopup();
+        }
+
+        //for (var i = 0; i =< colores.length; i +) {
+        //    console.log("En el índice '" + i + "' hay este valor: " + colores[i]);
+        //}
+
+        //L.marker([colores[0], -70.6506]).addTo(mymap).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        //    .openPopup();
+        //L.marker(['-33.4272', '-70.6506']).addTo(mymap).bindPopup('A pretty CSS3 popup.<br> Easily customizable.')
+        //    .openPopup();
 
         L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}', {
             attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',

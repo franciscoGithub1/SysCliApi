@@ -33,6 +33,8 @@
                 
             });
 
+            var colores = new Array({ lat: -33.4372, lng: -70.6506 }); 
+            console.log(colores[0]);
             let marker = new google.maps.Marker({
                 position: { lat: -33.4372, lng: -70.6506 },
                 title: 'Tu ubicacion'
